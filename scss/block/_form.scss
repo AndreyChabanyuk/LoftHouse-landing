@@ -1,0 +1,54 @@
+
+
+.form__input {
+    height: 50px;
+    padding:12px;
+    text-align: center;
+    background-color: rgb(255, 255, 255, 0.2);
+    color:$white;
+    font-size: 14px;
+
+    &::placeholder{
+        color:$placeholder-color;
+    }
+
+    &:focus{
+        background-color: rgb(255, 255, 255, 0.3);
+    }
+}
+.form__privacy {
+    font-size: 13px;
+    color:$muted;
+    text-align: center;
+
+    @include forTitle639{
+        grid-row: 4 / 5 
+    }
+    
+    
+}
+.form__btn {
+    height: 50px;
+    padding:12px;
+    font-size: 16px;
+    color:$white;
+    font-weight: 700;
+    text-align: center;
+    background-color:$accent;
+    transition:background-color 0.2s ease-in;
+    &:hover{
+        background-color:saturate($accent, 25%);
+    }
+
+}
+
+.cta__form{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:35px 30px;
+
+    @include forTitle639{
+        grid-template-columns: 1fr;
+       
+      }
+}

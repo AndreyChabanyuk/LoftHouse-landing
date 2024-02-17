@@ -1,0 +1,56 @@
+.section-map {
+    position:relative;
+    padding:180px 0;
+
+    @include mediaTablet{
+        padding:90px 0;
+    }
+    
+
+    &::before{
+        @include decorNumber;
+        content:'Ⅴ';
+        z-index: -1;
+        top:180px;
+        right:calc(50% + 555px);
+        transform: translate(50%, 0%);
+        line-height: 0.9;
+        
+    }
+}
+
+.section-map__title {
+    margin-bottom: 88px;
+
+    @include forTitle639{
+        text-align: center;
+        margin-bottom: 44px;
+    }
+    
+
+}
+
+
+.map {
+    background: #626262;
+    height: 358px;
+    transition: display 0.3s ease-in-out;
+    &:hover{
+        [class*= 'leaflet-bottom leaflet-right']{
+            display:block;
+        }
+        
+    }
+
+
+}
+
+
+[class*= 'leaflet-bottom leaflet-right']{
+    display:none;
+}
+
+
+
+
+

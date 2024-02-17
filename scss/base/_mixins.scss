@@ -1,0 +1,50 @@
+@mixin decorNumber {
+    position:absolute;
+    top:0;
+    opacity:0.02;
+    font-size: 400px;
+    font-family: $font-accent;
+   
+}
+
+
+@mixin mediaTablet{
+    @media screen and (max-width:$tablet){
+        @content;
+    }
+}
+
+@mixin forCtaForm{
+    @media screen and (max-width:$forCtaForm){
+        @content;
+    }
+}
+
+
+
+@mixin forApart{
+    @media screen and (max-width:$forApartments){
+        @content;
+    }
+}
+
+
+
+@mixin forTitle639{
+    @media screen and (max-width:$forTitle639){
+        @content
+    }
+}
+
+@mixin forPlayBtn{
+    @media screen and (max-width:$forPlayBtn){
+        @content
+    }
+}
+
+
+@mixin forTitle375{
+    @media screen and (max-width:$forTitle375){
+        @content
+    }
+}

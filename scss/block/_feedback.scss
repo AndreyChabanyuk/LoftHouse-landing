@@ -1,0 +1,41 @@
+.form{
+    align-items: center;
+}
+
+.feedback {
+    padding-bottom: 180px;
+
+    @include mediaTablet{
+        padding-bottom: 90px;
+    }
+}
+
+.feedback__title {
+    margin-bottom: 38px;
+}
+
+.feedback__form {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:30px;
+
+
+   @include forCtaForm{
+    grid-template-columns: 1fr;
+   }
+
+    
+
+}
+
+.form{
+    @include forCtaForm{
+        grid-row: 4 / 5;
+    }
+    
+}
+
+
+.form__btn {
+
+}
